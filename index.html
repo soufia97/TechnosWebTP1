@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<style type="text/css" link href>
-#header{background-color:#BDB76B; color:white; text-align: center; padding : 5px;}
-#form {background-color: #EEE8AA; padding : 5px ; clear:both; text-align:center;} 
-#main{padding : 5px;}
-#footer{background-color:#BDB76B; color:white; clear:both; text-align:center; padding:5px;}
-#navbar
+<style>
+#header{background-color:#BDB76B; color:white; text-align: center; padding : 5px;font-family: 'Alegreya Sans', sans-serif;}
+#form {background-color: #EEE8AA; padding : 5px ; clear:both; text-align:center; font-family: 'Alegreya Sans', sans-serif;} 
+#main{padding : 5px; font-family: 'Alegreya Sans', sans-serif;}
+#footer{background-color:#BDB76B; color:white; clear:both; text-align:center; padding:5px; font-family: 'Alegreya Sans', sans-serif;}
 </style>
+<head> <link type="text/css" rel="stylesheet" href="style.css" /> </head>
+<head> <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet"></head>
 </head>
 
 <div id="header">
@@ -21,14 +22,16 @@
 	</tr>
 	</table>
 	<ul><font size="+2">
-        <li align = "right" class="active" style = "display: inline; margin : 30px;"><a href="index.html"> Accueil </a></li>
+        <li align = "right" style = "display: inline; margin : 30px;"><a href="index.html"> Accueil </a></li>
         <li align = "right" style = "display: inline ; margin : 30px;"><a href="article.html"> Articles </a></li>
         <li align = "right" style = "display: inline; margin : 30px;"><a href="projet.html"> Projets </a></li>
-        <li align = "right" style = "display: inline; margin : 30px;"><a href="contact"> Contact </a></li>        
+        <li align = "right" style = "display: inline; margin : 30px;"><a href="contact.html"> Contact </a></li>        
       </font></ul>
+      <!--div class="bird-container">
+	  
+	</div-->
 
 </div>
-
 
 <div id="main">
 <body>
@@ -36,7 +39,7 @@
 	<h1 >Formation</h1>
 	<p>
 		<ul style="list-style-type:square">
-		<table cellspacing=4 cellpadding=2 width=81%>
+		<table cellspacing=4 cellpadding=2 width=92%>
 			<tr>
 				<td> <b> ECE Paris, École d’ingénieur, Paris </b> </td>
 				<td align="center">  2016-2020 </td>
@@ -67,7 +70,7 @@
 <h1>Expérience Professionnelle</h1>
 	<p> 
 		<ul style="list-style-type:square">
-		<table width=91%>
+		<table width=105%>
 			<tr>
 				<td> <b> Université Corpus Christi Cambridge </b> </td>
 				<td align="center"> Juillet 2013 </td>
@@ -80,7 +83,7 @@
 				<li> Participation à des simulations de sommets de l’ONU aﬁn de développer l’art de la négociation, du leadership et la conﬁance dans la prise de parole en public </li>  
 				<li>Renforcement des compétences en matière de recherche, réﬂexion critique et résolution de problèmes grâce à des études de cas réels</li> 
 		<br>
-		<table width=90%>
+		<table width=102%>
 			<tr>
 				<td> <b> Mindlytix, Data analyst junior </b> </td>
 				<td align="center"> Jan 2017- Fev 2017 </td>
@@ -93,7 +96,7 @@
 				 <li> Ciblage du marché et segmentation de la clientèle à partir du monitoring de données en temps réel </li>  
 				<li>Présentation de pitchs marketing et participation à de nombreuses réunions avec certaines des plus grandes entreprises du CAC40</li> 
 		<br>
-		<table width=84%>
+		<table width=94%>
 			<tr>
 				<td> <b> Software AG, Consultant transformation digitale</b> </td>
 				<td align="center">  Dec 2017- Fev 2018  </td>
@@ -110,7 +113,7 @@
 <h1>Projets</h1>
 		<p> 
 		<ul style="list-style-type:square">
-		<table width=77%>
+		<table width=88%>
 			<tr>
 				<td> <b> Diagnofast, Dossier médical en ligne et bracelet connecté mesurant les constantes vitales</b> </td>
 				<td align="center">2016-2017 </td>
@@ -119,7 +122,7 @@
 				<li> Responsabilité : Chef d’équipe électronique développant le bracelet connecté</li>  
 				<li> Renforcer les notions de circuits électriques et la programmation sur Arduino </li> 
 		<br>
-		<table width=82%>
+		<table width=93%>
 			<tr>
 				<td> <b> Système de reconnaissance faciale, Projet en Intelligence Artiﬁcielle </b> </td>
 				<td align="center">Sep 2016-Nov 2017 </td>
@@ -164,8 +167,11 @@
 </body>
 </div>
 
+
 <div id="form">
-	<h1> Formulaire de Contact </h1>
+<table align="center"> 
+<tr> <td><div class="bird"></div> </td> </tr>
+<tr> <h1> Formulaire de Contact </h1>
 	<form>
 		<label> Nom:</label>
 		<input type = "text" id ="nom"><br><br>
@@ -175,6 +181,8 @@
 		<input type ="Longtext" id = "text"><br><br>
 		<input type ="button" value="Submit" onclick="validation()"> <!-- la fonction validation() sera dans le fichier javascipt-->
 		</form>
+</tr>
+</table>
 </div>
 
 <div id="footer">

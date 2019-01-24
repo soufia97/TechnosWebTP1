@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<style type="text/css" link href>
-#header{background-color:#BDB76B; color:white; text-align: center; padding : 5px;}
-#form {background-color: #EEE8AA; padding : 5px ; clear:both; text-align:center;} 
-#main{padding : 5px;}
-#footer{background-color:#BDB76B; color:white; clear:both; text-align:center; padding:5px;}
-#navbar
+<style>
+#header{background-color:#BDB76B; color:white; text-align: center; padding : 5px;font-family: 'Alegreya Sans', sans-serif;}
+#form {background-color: #EEE8AA; padding : 5px ; clear:both; text-align:center; font-family: 'Alegreya Sans', sans-serif;} 
+#main{padding : 5px; font-family: 'Alegreya Sans', sans-serif;}
+#footer{background-color:#BDB76B; color:white; clear:both; text-align:center; padding:5px; font-family: 'Alegreya Sans', sans-serif;}
 </style>
+<head> <link type="text/css" rel="stylesheet" href="style.css" /> </head>
+<head> <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet"></head>
 </head>
 
 <div id="header">
@@ -22,13 +23,15 @@
 	</table>
 	<ul><font size="+2">
         <li align = "right" style = "display: inline; margin : 30px;"><a href="index.html"> Accueil </a></li>
-        <li align = "right" class="active" style = "display: inline ; margin : 30px;"><a href="article.html"> Articles </a></li>
+        <li align = "right" style = "display: inline ; margin : 30px;"><a href="article.html"> Articles </a></li>
         <li align = "right" style = "display: inline; margin : 30px;"><a href="projet.html"> Projets </a></li>
         <li align = "right" style = "display: inline; margin : 30px;"><a href="contact.html"> Contact </a></li>        
       </font></ul>
+      <!--div class="bird-container">
+	  
+	</div-->
 
 </div>
-
 
 <div id="main">
 <body>
@@ -54,7 +57,9 @@
 </div>
 
 <div id="form">
-	<h1> Formulaire de Contact </h1>
+<table align="center"> 
+<tr> <td><div class="bird"></div> </td> </tr>
+<tr> <h1> Formulaire de Contact </h1>
 	<form>
 		<label> Nom:</label>
 		<input type = "text" id ="nom"><br><br>
@@ -64,6 +69,8 @@
 		<input type ="Longtext" id = "text"><br><br>
 		<input type ="button" value="Submit" onclick="validation()"> <!-- la fonction validation() sera dans le fichier javascipt-->
 		</form>
+</tr>
+</table>
 </div>
 
 <div id="footer">

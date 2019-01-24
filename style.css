@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 205px;
+	height: 300px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: 20;
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -3600px 0;
+	}
+	
+}
 mynavbar {
 	display: inline;
 }
